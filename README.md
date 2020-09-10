@@ -12,7 +12,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Clone the code and run `npm install`.
 
-Run `node server.js` for a dev server. Navigate to `http://localhost:8080/`.
+Run `ng build --prod` to build a dist folder to run on server.
+
+Run `node server.js` for a production server. Navigate to `http://localhost:8080/`. If you make any changes to the source files repeat running the above two commands.
 
 ## Code scaffolding
 
