@@ -35,7 +35,6 @@ export class AppComponent {
   fetchSpaceX(){
     this.blockUI.start('Loading...');
     this.api.getspaceX().subscribe((data:any)=>{
-      // console.log(data);
       this.SpacexData = data;
 
       this.SpaceX1Data = this.SpacexData ;
@@ -52,8 +51,6 @@ export class AppComponent {
   
   onClickYears(event, num){
     this.togglebuttons = !this.togglebuttons;
-    // this.selectedyear = num;
-    // this.buttons = event.target.innerText;
     
     if(this.togglebuttons || this.buttons != event.target.innerText){
       this.buttons = event.target.innerText;

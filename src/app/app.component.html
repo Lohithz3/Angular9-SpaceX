@@ -38,16 +38,8 @@
 <div class="content main" fxLayout="row wrap" fxLayoutGap="16px grid">
   <div fxFlex="25%" class="cardsresponsive" fxFlex.xs="100%" fxFlex.sm="50%" class = "divcards" *ngFor="let items of SpacexData">
     <mat-card class="mat-elevation-z4" >
-      <mat-card-header>
-        <!-- <mat-card-title>Mountains {{num}}</mat-card-title> -->
-      </mat-card-header>
-      <!-- <img mat-card-image src="./../assets/images/mountains.jpg"> -->
       <mat-card-content>
-        <!-- <p>
-          The Himalayas is a mountain range in Asia.
-        </p> -->
-        
-        <img mat-card-image class = "images-css"  src={{items.links.mission_patch}}>
+        <img mat-card-image class = "images-css"  src={{items.links.mission_patch_small}}>
         <div style = "font-weight: bold;color: #0b3579;">{{items.mission_name}} #{{items.flight_number}}</div>
         <ul *ngFor="let ids of items.mission_id">
           <li>
@@ -65,8 +57,6 @@
         <div style = "display: flex;"><div style = "font-weight: bold;padding-right: 5px;">Successful Landing:</div> <div style = "color: #3a68b1;">{{items.rocket.first_stage.cores[0].land_success}}</div></div>
       </mat-card-content>
       <mat-card-actions>
-        <!-- <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button> -->
       </mat-card-actions>
     </mat-card>
   </div>

@@ -12,123 +12,116 @@ mat-toolbar {
   border-right: 16px solid #f1f1f1;
 }
 
-/* Column container */
 .row {  
     display: flex;
     position: relative;
     bottom: 30px;
+}
+  
+.side {
+  flex: 15%;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+}
+  
+.main {
+  flex: 85%;
+  margin: 0px -28px -16px 0px !important;
+}
+
+
+@media (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+  .mat-elevation-z4{
+      width: 95%;
+  }
+  .side{   
+      width: 90%;
+      position: relative;
+      left: 7%;
+    }
+    .main{   
+      
+      position: relative;
+      left: 2.5%;
+    }
+    h2{
+      margin-left: 37px;
+    }
+    .images-css{
+      margin: 8px -16px 16px 0px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 700px){
+  .side{   
+      flex: 30%;
+    }
+}
+.sidebarfilters{
+  height: 750px !important;
+}
+.hardcodedbuttons{
+    display: flex;
+    position: relative;
+    left: 10%;
+}
+h3{
+  text-align: center;
+  border-bottom: 3px solid darkgray;
+  width: 75%;
+  left: 11%;
+  position: relative;
+}
+@media screen  and (max-width: 1300px){
+  .hardcodedbuttons{
+      
+      left: 0%;
   }
   
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  .side {
-    flex: 15%;
-    background-color: #f1f1f1;
-    padding-left: 10px;
+}
+@media screen  and (max-width: 1024px){
+  .hardcodedbuttons{
+      
+      left: 6%;
   }
   
-  /* Main column */
-  .main {
-    flex: 85%;
-    margin: 0px -28px -16px 0px !important;
-  }
+}
 
-
-  @media (max-width: 700px) {
-    .row {   
-      flex-direction: column;
-    }
-    .mat-elevation-z4{
-        width: 95%;
-    }
-    .side{   
-        width: 90%;
-        position: relative;
-        left: 7%;
-      }
-      .main{   
-        
-        position: relative;
-        left: 2.5%;
-      }
-      h2{
-        margin-left: 37px;
-      }
-      .images-css{
-        margin: 8px -16px 16px 0px !important;
-      }
-  }
-
-  @media screen and (max-width: 1024px) and (min-width: 700px){
-    .side{   
-        flex: 30%;
-      }
+@media screen  and (max-width: 700px){
+  .hardcodedbuttons{
+      
+      left: 15%;
   }
   .sidebarfilters{
-    height: 750px !important;
+    height: 660px !important;
   }
-  .hardcodedbuttons{
-      display: flex;
-      position: relative;
-      left: 10%;
+  .launching {
+    top: 0px !important;
   }
-  h3{
-    text-align: center;
-    border-bottom: 3px solid darkgray;
-    width: 75%;
-    left: 11%;
-    position: relative;
+  .landing {
+    top: 0px !important;
   }
-  @media screen  and (max-width: 1300px){
-    .hardcodedbuttons{
-        
-        left: 0%;
-    }
-    
-  }
-  @media screen  and (max-width: 1024px){
-    .hardcodedbuttons{
-        
-        left: 6%;
-    }
-    
-  }
+}
 
-  @media screen  and (max-width: 700px){
-    .hardcodedbuttons{
-        
-        left: 15%;
-    }
-    .sidebarfilters{
-      height: 660px !important;
-    }
-    .launching {
-      top: 0px !important;
-    }
-    .landing {
-      top: 0px !important;
-    }
-  }
+.images-css{
+  height: auto;
+  width: 100%;
+  margin: 8px -16px 16px 8px;
+  margin-top: 0px !important;
+  background: #e8e8e8;
+}
 
-  .images-css{
-    height: auto;
-    width: 100%;
-    margin: 8px -16px 16px 8px;
-    margin-top: 0px !important;
-    background: #e8e8e8;
-  }
+.activeyear{
+  background: #7cba01 !important;
+}
 
-  .activeyear{
-    background: #7cba01 !important;
-  }
+.activelaunch{
+  background: #7cba01 !important;
+}
 
-  .activelaunch{
-    background: #7cba01 !important;
-  }
-
-  .activeland{
-    background: #7cba01 !important;
-  }
-//   .content.vertical { margin: -20px 0 0 -20px; }
-// .content > * { margin: 0 0 0 20px; }
-// .content.vertical > * { margin: 20px 0 0 0; }
+.activeland{
+  background: #7cba01 !important;
+}
