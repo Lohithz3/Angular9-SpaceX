@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "spaceX"
+    }
+  },
+  "defaultProject": "spaceX",
+  "cli": {
+    "analytics": "18ed4013-fec0-4f47-a3f7-0edd9c2abdd1"
+  }
 }
